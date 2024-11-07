@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto&display=swap');
+*{
+    margin: 0%;
+    box-sizing: border-box;
+}
+:root{
+    --main-font--:"Roboto";
+    --secondary-font--: "Outfit";
+}
+.navbar-container{
+    width: 100%;
+    height: 60px;
+    background-color: green;
+    font-family: var(--main-font--);
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-container .navbar{
+    display: flex;
+    list-style: none;
+    
+}
+.navbar li{
+    padding: 20px;
+    position: relative;
+}
+.navbar li{
+    text-decoration: none;
+    color: white;
+}
+.dropdown {
+    list-style: none;
+    padding: 0%;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    background-color: green;
+    display: none;
+}
+.navbar li:hover .dropdown{
+    display: block;
+}
+.navbar li a i{
+    transition: 0.4s;
+}
+.navbar li:hover i{
+    transform: rotate(180deg);
+    transition: 0.4s;
+}
+.mode{
+    width: auto;
+    height: 30px;
+    margin: 15px 10px ;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-family: var(--main-font--);
+    background-color: black;
+    color: white;
+}
+.search-login-container{
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid black;
+    font-family: var(--secondary-font--);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search-login-container h2{
+    color: green;
+    padding-left: 2.5%;
+}
+.search{
+    width: 30%;
+    height: 50%;
+ 
+}
+.search-login-container input{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: 1px solid gray;
+    outline: none;
+    padding-left: 10px;
+}
+.search{
+    position: relative;
+}
+.search i{
+    position: absolute;
+    right: 3%;
+    top: 29%;
+    
+}
+.Login{
+    width: auto;
+    height: 40px;
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-right: 8px;
+}
+.hero-container{
+    width: 98%;
+    height: 76vh;
+    margin: 20px auto;
+    border-radius: 10px;
+    background-color: red;
+    overflow: hidden;
+    position: relative;
+}
+.hero-container img{
+    width: 100%;
+    height: 100%;
+    filter: brightness(50%);
+}
+.hero-text-container{
+    width: 30%;
+    height: 50%;
+    position: absolute;
+    top: 26%;
+    left: 3%;
+    font-family: var(--secondary-font--);
+
+}
+.hero-text-container h1{
+    font-size: 45px;
+    color: aqua;
+}
+.hero-text-container p{
+    color: aquamarine;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.explore{
+    width: 120px;
+    height: 35px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+.explore:hover{
+    background-color: transparent;
+    border: 1px solid skyblue;
+    color: white;
+    transition: 0.4s;
+}
+.hero-image-container{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 5%;
+    right: 23%;
+    display: flex;
+    justify-content: space-between;
+  
+}
+.hero-image-container img{
+    width: 30%;
+    filter: brightness(100%);
+    border-radius: 10px;
+    transition: 0.4s;
+   
+}
+.hero-image-container:hover{
+    transform: scale(1.02);
+    transition: 0.4s;
+}
+.Special{
+    text-align: center;
+    margin-top: 20px;
+    font-family: var(--main-font--);
+    
+}
+.special-container{
+    width: 100%;
+    height: 400px;
+   
+    padding: 18px;
+    font-family: "outfit";
+    display: flex;
+    justify-content: space-between;
+}
+.first-container{
+    width: 49%;
+    height: 100%;
+}
+.special-container .first-container {
+    width: 49%;
+    height: 100%;
+    padding: 10px 15px ;
+    cursor: pointer;
+}
+.first-container img{
+    width: 100%;
+    height: 65%;
+    border-radius: 5px;
+}
+.first-container title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.title i{
+    font-size: 25px;
+    background-color: gray;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+.title i:hover{
+    border: 1px solid black;
+    background-color: transparent;
+    color: black;
+    transition: 0.4s;
+}
+.place-food{
+    text-align: center;
+    margin-top: 20px;
+    font-family: var(--secondary-font--);
+}
+.box-container{
+    width: 100%;
+    height: 400px;
+}
+.box-container .small-center{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.box-container .small-center .center{
+    height: 65%;
+    color: skyblue;
+    border: 1px solid skyblue;
+    border-radius: 10px;
+
+}
+.box-container .small-box{
+    width: 100%;
+    height: 83%;
+   
+    display: flex;
+    justify-content: space-around;
+}
+.small-box img{
+    width: 32%;
+    height: 100%;
+    border-radius: 10px;
+}
+.kohkong{
+    text-align: center;
+}
